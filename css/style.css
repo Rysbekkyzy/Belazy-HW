@@ -11,7 +11,6 @@ html {
 body {
     margin: 0;
     padding: 0;
-
     font-family: 'Roboto', serif;
 }
 
@@ -380,48 +379,40 @@ p {
     display: flex;
     justify-content: space-between;
     padding-top: 30px;
-
 }
 
 .guarantee__text {
     font-size: 15px;
     padding-top: 30px;
     padding-bottom: 30px;
-
 }
-
 .guarantee__link {
     text-decoration: none;
     color: black;
     box-shadow: inner 50px;
 }
-
 .bonuses {
     background-color: #08243e;
     height: 410px;
 }
-
 .bonuses__title {
     color: #ffffff;
 }
-
 .bonuses__list {
     list-style: none;
     display: flex;
     padding-bottom: 50px;
     padding-left: 5px;
 }
-
 .bonuses__item {
     margin-left: 60px;
 }
-
 .bonuses__description {
     padding-top: 20px;
 }
 
-/* QUASTIONS STYLES */
 
+/* QUASTIONS STYLES */
 .quastions {
     background-color: #0b3554;
     height: 700px;
@@ -448,4 +439,63 @@ p {
 
 .quastions__img {
     width: 500px;
+}
+
+/* Slider */
+.slider__title{
+    text-align: center;
+    padding-top: 50px;
+    
+}
+
+.slider{
+    display: flex;
+    margin-top: 50px;
+}
+.slider-comments {
+    background-color: gainsboro;
+    height: 680px;
+}
+
+.gallery img {
+    width: 700px;
+    height: 480px;
+}
+
+.gallery #prev {
+    position: absolute;
+    left: 175px;
+}
+
+.gallery #next {
+    position: absolute;
+    left: 845px; 
+}
+
+.gallery .control-btn {
+    height: 480px;
+    background-color: transparent;
+    border: none;
+    color: #ffffff;
+    font-size: 50px;
+}
+
+ .gallery .control-btn:hover{
+    background-color: white;
+    opacity: .3;
+    color: black;
+} 
+
+ .gallery .control-btn:focus{
+    outline: none;
+} 
+
+ .time {
+    font-size: 10px;
+    color: gray;
+}
+
+.slider__text{
+    width: 300px;
+    margin-left: 60px;
 }
