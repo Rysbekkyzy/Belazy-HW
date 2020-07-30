@@ -42,6 +42,8 @@ p {
 
 .section__description {
     font-size: 15px;
+    color: #ffffff;
+    text-align: center;
 }
 
 /* header styles */
@@ -386,27 +388,33 @@ p {
     padding-top: 30px;
     padding-bottom: 30px;
 }
+
 .guarantee__link {
     text-decoration: none;
     color: black;
     box-shadow: inner 50px;
 }
+
 .bonuses {
     background-color: #08243e;
     height: 410px;
 }
+
 .bonuses__title {
     color: #ffffff;
 }
+
 .bonuses__list {
     list-style: none;
     display: flex;
     padding-bottom: 50px;
     padding-left: 5px;
 }
+
 .bonuses__item {
     margin-left: 60px;
 }
+
 .bonuses__description {
     padding-top: 20px;
 }
@@ -430,36 +438,70 @@ p {
 
 .quastions__item {
     padding-top: 30px;
+    text-align: left;
+    font-size: 17px;
+    padding-left: 28px;
 }
 
 .quastion__text {
-
     color: #ffffff;
+    text-decoration: none;
+    border-bottom: 1px solid #8a96a2;
+    transition-duration: .3s;
 }
+.questions__item  .quastion__text:hover {
+    color: #579eff;
+    border: none;
+}
+
+.quastion__item {
+    position: relative;
+    list-style-type: none; 
+    padding-top: 30px;
+    text-align: left;
+    font-size: 17px;
+    padding-left: 28px;
+}
+
+.quastion__item::before {
+    position: absolute;
+    content: url('../img/reload.png');
+    left: -17px;
+    bottom: -5px;
+}
+
 
 .quastions__img {
     width: 500px;
 }
 
 /* Slider */
-.slider__title{
+.slider-comments {
+    background-color: #0b3554;
+    height: 680px;
+}
+.slider__title {
     text-align: center;
     padding-top: 50px;
-    
+    color: #ffffff;
 }
 
-.slider{
+
+.slider {
     display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
     margin-top: 50px;
+    
 }
-.slider-comments {
-    background-color: gainsboro;
-    height: 680px;
+.gallery{
+ position: relative;
 }
 
 .gallery img {
-    width: 700px;
-    height: 480px;
+    width: 275px;
+    height: 170px;
+    margin-left: 15px;
 }
 
 .gallery #prev {
@@ -469,7 +511,7 @@ p {
 
 .gallery #next {
     position: absolute;
-    left: 845px; 
+    left: 845px;
 }
 
 .gallery .control-btn {
@@ -480,22 +522,18 @@ p {
     font-size: 50px;
 }
 
- .gallery .control-btn:hover{
+.gallery .control-btn:hover {
     background-color: white;
     opacity: .3;
     color: black;
-} 
+}
 
- .gallery .control-btn:focus{
+.gallery .control-btn:focus {
     outline: none;
-} 
+}
 
- .time {
+.time {
     font-size: 10px;
     color: gray;
 }
 
-.slider__text{
-    width: 300px;
-    margin-left: 60px;
-}
